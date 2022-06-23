@@ -1,0 +1,159 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Gender",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateUserRequest",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\ndb: List[User] = [\n    User(\n        id=UUID(\"269a0894-15e1-4d7e-a3d5-3e99a33ab7b7\"),\n        first_name=\"rutanana\",\n        last_name=\"brenold\",\n        gender=Gender.female,\n        roles=[Role.student]\n    ),\n    User(",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Gender",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Gender(str, Enum):\n      mail = \"Male\"\n      female = \"female\"\nclass Role(str, Enum):\n      admin = \"admin\"\n      user = \"user\"\n      student = \"student\"       \nclass User(BaseModel):\n      id: Optional[UUID] = uuid4()\n      first_name: str",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Role(str, Enum):\n      admin = \"admin\"\n      user = \"user\"\n      student = \"student\"       \nclass User(BaseModel):\n      id: Optional[UUID] = uuid4()\n      first_name: str\n      last_name: str\n      middle_name: Optional[str]\n      gender: Gender",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class User(BaseModel):\n      id: Optional[UUID] = uuid4()\n      first_name: str\n      last_name: str\n      middle_name: Optional[str]\n      gender: Gender\n      roles: List[Role]\nclass UpdateUserRequest(BaseModel):\n      first_name: Optional[str]\n      last_name: Optional[str]",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateUserRequest",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class UpdateUserRequest(BaseModel):\n      first_name: Optional[str]\n      last_name: Optional[str]\n      middle_name: Optional[str]\n      roles: Optional[List[Role]]",
+        "detail": "models",
+        "documentation": {}
+    }
+]
